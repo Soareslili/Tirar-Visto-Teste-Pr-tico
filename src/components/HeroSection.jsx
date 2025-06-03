@@ -1,6 +1,6 @@
 import './heroSection.css'
 import FamiliaViajando from '../assets/familia.png'
-import Indonesia from '../assets/indonesia.png'
+import Indonesia from '../assets/Indonesia.png'
 import Franca from '../assets/França.png'
 import Grecia from '../assets/Grecia.png'
 import India from '../assets/India.png'
