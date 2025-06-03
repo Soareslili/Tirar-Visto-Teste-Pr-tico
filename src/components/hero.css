@@ -1,0 +1,272 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 50px;
+  padding: 60px;
+  background: #fff;
+  margin: 40px auto;
+ 
+
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 28px;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 8px 0;
+  color: #222;
+}
+
+.hero-divider {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 0 0 12px 0;
+  width: 80%;
+}
+
+.hero-desc {
+  font-size: 1.08rem;
+  color: #444;
+  margin-bottom: 0;
+}
+
+.hero-btn {
+  background: #1a2341;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  padding: 10px;
+  font-size: 1.08rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 8px;
+  transition: background 0.2s;
+  display: inline-flex;
+  gap: 8px;
+}
+.hero-btn:hover {
+  background: #273366;
+}
+
+.hero-card {
+  display: flex;
+  align-items: center;
+  background: #f6f7fa;
+  border-radius: 16px;
+  padding: 10px 18px;
+  margin: 8px 0 0 0;
+  gap: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  max-width: 320px;}
+
+.hero-card-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.hero-card-title {
+  font-weight: 600;
+  font-size: 1.08rem;
+  color: #1a2341;
+}
+.hero-card-sub {
+  font-size: 0.95rem;
+  color: #888;
+}
+.hero-card-btn {
+  background: #1a2341;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 1.2rem;
+  margin-left: auto;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-stats, .stats {
+  display: flex;
+  gap: 48px;
+  margin-top: 24px;
+}
+.descript {
+  text-align: left;
+}
+.text-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a2341;
+  margin: 0;
+}
+
+.hero-image-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  height: 100%;
+  padding: 0;
+}
+
+.hero-image {
+  width: 700px;
+  height: 100vh;
+  object-fit: cover;
+  border-radius: 32px;
+  box-shadow: none;
+  display: block;
+ 
+}
+
+.hero-floating-btn {
+  position: absolute;
+  top: 28px;
+  right: 38px;
+  background: #ffd600;
+  color: #222;
+  border: none;
+  border-radius: 24px;
+  padding: 10px 24px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  z-index: 2;
+}
+
+.hero-overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(0deg, rgba(20,20,20,0.85) 70%, rgba(255,255,255,0) 100%);
+  color: #fff;
+  border-radius: 0 0 32px 32px;
+  padding: 36px 32px 22px 32px;
+  z-index: 1;
+}
+.hero-overlay h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
+.hero-overlay p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.Frame {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F7F7F7;
+  width: 100%;
+  height: 260px;
+  padding: 0 60px;
+  box-sizing: border-box;
+}
+
+.text-Frame {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #222;
+  text-align: left;
+  line-height: 1.1;
+  margin: 0;
+  max-width: 700px;
+}
+
+.text-Frame-2 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: #222;
+  font-style: italic;
+  text-align: right;
+  margin: 0;
+  max-width: 600px;
+}
+
+/* ...Resposividade... */
+
+@media (max-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 24px 8px;
+    margin: 20px 0;
+  }
+
+  .hero-title {
+    font-size: 1.7rem;
+  }
+
+  .hero-desc {
+    font-size: 1rem;
+  }
+
+  .hero-image-container {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    border-radius: 20px;
+  }
+
+  .hero-floating-btn {
+    top: 12px;
+    right: 12px;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+  }
+
+  .hero-overlay {
+    padding: 18px 12px 12px 12px;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .hero-stats, .stats {
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 16px;
+  }
+
+  .hero-card {
+    max-width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 10px 10px;
+  }
+
+  .Frame {
+    flex-direction: column;
+    height: auto;
+    padding: 24px 8px;
+    gap: 16px;
+  }
+
+  .text-Frame,
+  .text-Frame-2 {
+    font-size: 1.3rem;
+    max-width: 100%;
+    text-align: left;
+  }
+}
